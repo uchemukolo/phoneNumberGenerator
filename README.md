@@ -1,7 +1,4 @@
 # phoneNumberGenerator
-The random phone number generator.
-
-# phone_number_generator
 An application that generates phone numbers for a telecommunication company.
 
 ## Project Structure
@@ -9,20 +6,19 @@ An application that generates phone numbers for a telecommunication company.
 The project structure follows the **MVC** (Model-View-Controller) pattern.
 ```
 ├── src
-│   ├── __tests__
+│   ├── tests
 │   │   └── phoneNumerGenerator.test.js
 │   ├── controllers
 │   │   └── PhoneNumberController
-│   │   │      └── index.js
-│   │   │      └── PhoneNumberController.js
+│   ├── routes
 │   │   └── index.js
 │   ├── helpers
-│   │   └── Error.js
-│   │   └── defaults.js
-│   │   └── generator.js
-│   ├── index.js
+│   │   └── errorHandler.js
+│   │   └── defaultData.js
+│   │   └── numberGenerator.js
+│   ├── app.js
 │   ├── middlewares
-│   │   └── checkQuery.js
+│   │   └── query.js
 ```
 
 ## Requirements
@@ -33,10 +29,10 @@ The project structure follows the **MVC** (Model-View-Controller) pattern.
 ## Getting Started
 
 ```
-$ git clone https://github.com/obulaworld/phone_number_generator.git
-$ cd phone_number_generator
+$ git clone https://github.com/uchemukolo/phoneNumberGenerator.git
+$ cd phoneNumberGenerator
 $ npm install
-$ npm run server                  # For development purpose
+$ npm start to run the server
 ```
 
 You should now be able to access the API via http://localhost:port/api/v1/
@@ -45,9 +41,10 @@ You should now be able to access the API via http://localhost:port/api/v1/
 
 ## Project Details
 `numbers:`
- - generate phone numbers
- - get generated phone numbers
+ - generate phone numbers up to a maximum of 10000 at a time
+ - get total generated phone numbers
  - get minimum and maximum generated phone numbers
+ - Sort numbers in ascending and descending order
 
 ## API Endpoints
 
