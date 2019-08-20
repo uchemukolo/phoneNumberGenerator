@@ -52,5 +52,5 @@ You should now be able to access the API via http://localhost:port/api/v1/
 <tr><th>HTTP VERB</th><th>ENDPOINTS</th><th>DESCRIPTION</th><th>QUERY</th></tr>
 <tr><td>GET</td><td>/api/v1/phonemunber</td><td>Get generated phone numbers</td><td>quantity,order</td></tr>
 <tr><td>GET</td><td>/api/v1/phonemunber/generate</td><td>Generate phone numbers/td><td>quantity,order</td></tr>
-<tr><td>PUT</td><td>/api/v1/phonemunber/minandmax</td><td>Get minimum and maximum generated phone numbers</td><td></td></tr>
+<tr><td>GET</td><td>/api/v1/phonemunber/minandmax</td><td>Get minimum and maximum generated phone numbers</td><td></td></tr>
 
